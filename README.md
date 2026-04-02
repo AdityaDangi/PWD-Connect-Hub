@@ -32,33 +32,6 @@
 
 ---
 
-## 🚀 Getting Started (Local)
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/YOUR_USERNAME/pwd-connect-hub.git
-cd pwd-connect-hub
-```
-
-### 2. Install dependencies
-```bash
-npm install
-```
-
-### 3. Start the server
-```bash
-npm start
-```
-
-### 4. Open in browser
-```
-http://localhost:3000
-```
-
-> The database is auto-created and seeded with sample data on first run.
-
----
-
 ## 📁 Project Structure
 
 ```
