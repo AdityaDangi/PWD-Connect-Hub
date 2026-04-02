@@ -1,33 +1,95 @@
 # 🏗️ PWD Connect Hub — Dangi Brother's Company
 
-Your Professional Construction Network Platform
+> A professional construction project management platform for managing PWD projects, contractors, labor, materials, pricing, and payments — all in one place.
 
-## Tech Stack
-- **Backend**: Node.js + Express + SQLite (better-sqlite3)
-- **Frontend**: Vanilla HTML/CSS/JS (no framework)
+## 🌐 Live Demo
 
-## Setup & Run
+🔗 **Deployed:** [https://pwd-connect-hub.up.railway.app](https://pwd-connect-hub.up.railway.app)
+🖥️ **Local:** [http://localhost:3000](http://localhost:3000)
 
-### 1. Install dependencies
+---
+
+## 📸 Features
+
+- 📊 **Dashboard** — Live stats for projects, contractors, labor, materials & payments
+- 📁 **Projects** — Full CRUD with budget tracking, progress, and contractor assignment
+- 👷 **Contractors** — Manage verified contractors with ratings and license info
+- 🦺 **Labor** — Track skilled workers, daily rates, and project assignments
+- 🧱 **Materials** — Inventory management with stock status and supplier info
+- 💰 **Pricing** — Rate schedule with GST support for materials, labor & equipment
+- 💳 **Payments** — Record and track payments with status (Paid / Pending)
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Backend | Node.js + Express |
+| Database | SQLite (better-sqlite3) |
+| Frontend | Vanilla HTML, CSS, JavaScript |
+| Deployment | Railway |
+
+---
+
+## 🚀 Getting Started (Local)
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/YOUR_USERNAME/pwd-connect-hub.git
+cd pwd-connect-hub
+```
+
+### 2. Install dependencies
 ```bash
 npm install
 ```
 
-### 2. Start the server
+### 3. Start the server
 ```bash
 npm start
 ```
 
-### 3. Open in browser
+### 4. Open in browser
 ```
 http://localhost:3000
 ```
 
-## Features
-- Dashboard with live stats
-- Projects management (CRUD)
-- Contractors management (CRUD)
-- Labor management (CRUD)
-- Materials tracking (CRUD)
-- Pricing / Rate schedule (CRUD)
-- Payments recording (CRUD)
+> The database is auto-created and seeded with sample data on first run.
+
+---
+
+## 📁 Project Structure
+
+```
+pwd-connect-hub/
+├── backend/
+│   ├── server.js        # Express server & API routes
+│   ├── db.js            # SQLite setup & seed data
+│   └── routes/          # Route handlers (projects, contractors, etc.)
+├── frontend/
+│   ├── index.html       # Single-page app
+│   ├── css/style.css    # Styles
+│   └── js/app.js        # Frontend logic
+├── package.json
+└── railway.json         # Railway deployment config
+```
+
+---
+
+## ☁️ Deployment (Railway)
+
+This project is deployed on [Railway](https://railway.app) with a persistent volume for SQLite.
+
+| Variable | Value |
+|----------|-------|
+| `DB_PATH` | `/data/pwd_hub.db` |
+| Volume mount | `/data` |
+
+---
+
+## 👤 Author
+
+**Aditya Dangi** — Dangi Brother's Company
+📧 18adityadangi@gmail.com
+📞 9896092421
