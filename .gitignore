@@ -1,0 +1,6 @@
+node_modules/
+backend/pwd_hub.db
+backend/pwd_hub.db-shm
+backend/pwd_hub.db-wal
+.env
+.DS_Store
